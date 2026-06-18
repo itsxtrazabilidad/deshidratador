@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes - Prueba Sensorial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7fc;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #0b2a4a;
+            margin-bottom: 30px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #0b2a4a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        .back:hover {
+            background: #f39c12;
+            color: #0b2a4a;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 PRUEBA SENSORIAL</h1>
+    <div class="gallery">
+        <!-- Reemplaza estos nombres por los reales de tus fotos -->
+        <img src="sensorial1.jpg" alt="Prueba 1">
+        <img src="sensorial2.jpg" alt="Prueba 2">
+        <img src="sensorial3.jpg" alt="Prueba 3">
+        <!-- Agrega más líneas según necesites -->
+    </div>
+    <a href="../" class="back">⬅ Volver al lote</a>
+</body>
+</html>
