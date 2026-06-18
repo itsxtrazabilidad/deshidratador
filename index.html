@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trazabilidad - Deshidratador Solar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f7fc;
+            color: #1e2a3a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: linear-gradient(135deg, #0b2a4a 0%, #1b4a7a 100%);
+            color: white;
+            padding: 30px 20px 25px;
+            border-bottom: 6px solid #f39c12;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo-area img {
+            height: 80px;
+            background: white;
+            padding: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .header-text h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .header-text h1 span {
+            color: #f1c40f;
+        }
+        .header-text .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .header-text .institution {
+            font-size: 1rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.15);
+            padding: 6px 18px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .header-text .institution i {
+            margin-right: 8px;
+            color: #f1c40f;
+        }
+        .main-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+            width: 100%;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0b2a4a;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            border-bottom: 4px solid #f39c12;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .section-title i {
+            color: #f39c12;
+            font-size: 2rem;
+        }
+        .lote-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+            border-left: 8px solid #1b4a7a;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .lote-card .folder-icon {
+            font-size: 3rem;
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+        .lote-card h3 {
+            font-size: 1.8rem;
+            color: #0b2a4a;
+            margin-bottom: 20px;
+            word-break: break-word;
+        }
+        .lote-card .info {
+            color: #475569;
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+        .btn-download {
+            display: inline-block;
+            background: #0b2a4a;
+            color: white;
+            font-weight: 700;
+            padding: 18px 40px;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 18px rgba(11, 42, 74, 0.3);
+        }
+        .btn-download i {
+            margin-right: 12px;
+        }
+        .btn-download:hover {
+            background: #f39c12;
+            color: #0b2a4a;
+            transform: scale(1.03);
+            box-shadow: 0 10px 25px rgba(243, 156, 18, 0.4);
+        }
+        .footer {
+            background: #0b2a4a;
+            color: rgba(255,255,255,0.7);
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            border-top: 4px solid #f39c12;
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-area {
+                flex-direction: column;
+            }
+            .header-text h1 {
+                font-size: 1.6rem;
+            }
+            .lote-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="logo-tecnm.png" alt="Logo TecNM" onerror="this.style.display='none'">
+                <div class="header-text">
+                    <h1>Trazabilidad del <span>Deshidratador Solar</span></h1>
+                    <div class="subtitle">por Convección Forzada 🌞</div>
+                    <div class="institution">
+                        <i class="fas fa-university"></i> TecNM Campus Xalapa
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="section-title">
+            <i class="fas fa-archive"></i> Lotes Producidos
+        </div>
+
+        <div class="lote-card">
+            <div class="folder-icon"><i class="fas fa-folder"></i></div>
+            <h3>🍍 LOTE PIÑA_20260529_001</h3>
+            <p class="info">
+                <i class="fas fa-file-excel"></i> 3 archivos Excel · 
+                <i class="fas fa-images"></i> 2 carpetas con imágenes
+            </p>
+            <a href="https://download-directory.github.io/?url=https://github.com/itsxtrazabilidad/deshidratador/tree/main/LOTE%20PI%C3%91A_20260529_001" target="_blank" class="btn-download">
+                <i class="fas fa-download"></i> Descargar lote completo (ZIP)
+            </a>
+            <p style="margin-top: 15px; font-size: 0.85rem; color: #94a3b8;">
+                <i class="fas fa-info-circle"></i> El ZIP incluye todas las subcarpetas y archivos
+            </p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p><i class="fas fa-copyright"></i> 2026 Proyecto de Residencias - Trazabilidad 4.0</p>
+    </footer>
+</body>
+</html>
